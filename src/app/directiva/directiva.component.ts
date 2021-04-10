@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivaComponent {
 
   listaCurso: string[] = ['TypeScript', 'JavaScript', 'Java SE', 'C#', 'PHP'];
-  enable: boolean = true;
+  enable = true;
 
   setEnable(): void {
-    this.enable = (this.enable == true) ? false : true;
+    this.enable = (this.enable === true) ? false : true;
   }
 
 }
